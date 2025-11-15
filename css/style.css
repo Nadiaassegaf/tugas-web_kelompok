@@ -318,8 +318,8 @@ footer {
 
 
 .pengurus-foto {
-    width: 90px; 
-    height: 90px;
+    width: 100px; 
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--warna-coklat-sedang);
@@ -383,7 +383,7 @@ footer {
 
 #deskripsi-tugas h3 {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--warna-coklat-gelap);
 }
 
