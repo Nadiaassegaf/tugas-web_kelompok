@@ -135,6 +135,39 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px; 
+    z-index: 3; 
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--warna-putih);
+    transition: opacity 0.3s ease;
+    width: 200px; 
+    text-align: center;
+}
+
+.social-icon.instagram {
+    background-color: #E1306C; 
+}
+
+.social-icon.tiktok {
+    background-color: #000000;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
 
 #spotlight-prestasi {
     padding: 60px 0;
