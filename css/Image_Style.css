@@ -1,0 +1,88 @@
+:root {
+    --warna-cream: #FAF8F1;         
+    --warna-putih: #FFFFFF;          
+    --warna-coklat-gelap: #4E4039;   
+    --warna-coklat-sedang: #8D6E63;  
+    --warna-krem-terang: #EFEBE5;    
+    --font-utama: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-utama);
+    background-color: var(--warna-cream); 
+    color: var(--warna-coklat-gelap);     
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.main-header { 
+    background-color: var(--warna-putih); 
+    padding: 10px 0; 
+    border-bottom: 2px solid var(--warna-coklat-sedang); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.main-header .container { 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.logo-container { 
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.site-title { 
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--warna-coklat-gelap);
+}
+
+.main-nav ul { 
+    list-style: none; 
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-left: 25px; 
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--warna-coklat-sedang);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    background-color: var(--warna-cream);
+    color: var(--warna-coklat-gelap);
+}
+
+.main-nav ul li a.active { 
+    background-color: var(--warna-coklat-gelap);
+    color: var(--warna-putih);
+}
