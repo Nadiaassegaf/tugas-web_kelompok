@@ -95,7 +95,18 @@ body {
     padding: 10px;
     width: auto;
     height: 400px; 
+    
+    
+}
+
+.slide_kiri {
     border-radius: 30px;
+}
+
+#Tahun {
+    text-align: center; 
+    padding-top: 20px;
+    
 }
 
 .slide_kiri:hover {
@@ -104,9 +115,20 @@ body {
 }
 
 .foto {
-    
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    animation-name: slideKiri;
+    position: relative;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideKiri {
+    0%  {right:0px; top:0px;}
+  100% {right:560px; top:0px;}
+}
+
+#main1 {
 
 }
