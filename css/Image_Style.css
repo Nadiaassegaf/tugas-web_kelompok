@@ -99,7 +99,7 @@ body {
     
 }
 
-.slide_kiri {
+.foto1 {
     border-radius: 30px;
 }
 
@@ -109,18 +109,23 @@ body {
     
 }
 
-.slide_kiri:hover {
+.foto1:hover {
     height:430px
     
+}
+
+#slideKiri {
+    animation-name: slideKiri;
+    position: relative;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 .foto {
     display: flex;
     justify-content: center;
-    animation-name: slideKiri;
-    position: relative;
-    animation-duration: 2s; 
-    animation-fill-mode: forwards;
+    
 }
 
 
