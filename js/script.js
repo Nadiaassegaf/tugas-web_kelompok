@@ -1,17 +1,26 @@
 const slide = document.getElementsByClassName('main1');
-const fadein = document.getElementsByClassName('sub');
+const sub = document.getElementsByClassName('sub');
+const lib = document.getElementById("fotos");
 
 function slideFunction() {
 
     for (let i = 0; i < slide.length; i++){
     slide[i].removeAttribute("id");
     void slide[i].offsetWidth;    
-    slide[i].setAttribute("id", "slideKiri");
+    slide[i].setAttribute("id", "");
     slide[i].removeAttribute("onclick");
   }
-
-  fadein[0].setAttribute("id", "fadein");
-
   
+    lib.innerHTML += '<img class="sub" src="image/aldi.jpg">';
+    lib.innerHTML += '<img class="sub" src="image/bimo.jpg"">';
+    lib.innerHTML += '<img class="sub" src="image/alfi.jpg"">';
+    lib.innerHTML += '<img class="sub" src="image/alif.jpg"">';
+    lib.innerHTML += '<img class="sub" src="image/nanda.jpg"">';
+    
+    
+
+  for (let i = 0; i < sub.length; i++){
+    sub[i].setAttribute("id", "fadein");
+  }
 
 }

@@ -87,8 +87,12 @@ body {
     color: var(--warna-putih);
 }
 
+
+
+
+
+
 .content {
-    
 }
 
 .foto img{
@@ -98,7 +102,6 @@ body {
     
     
 }
-
 
 
 #Tahun {
@@ -118,9 +121,14 @@ body {
 
 #fadein {
     animation-name: fadein;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+@keyframes slideKiri {
+    0%  {right:0px; top:0px;}
+  100% {right:560px; top:0px;}
 }
 
 @keyframes fadein {
@@ -150,11 +158,6 @@ body {
 
 .sub:hover {
     height:430px
-}
-
-@keyframes slideKiri {
-    0%  {right:0px; top:0px;}
-  100% {right:560px; top:0px;}
 }
 
 #main1 {
