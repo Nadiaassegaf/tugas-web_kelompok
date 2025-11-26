@@ -3,23 +3,21 @@ const sub = document.getElementsByClassName('sub');
 const lib = document.getElementById("fotos");
 
 
+function appendImage(parent, imageSrc){
+  let image = document.createElement('img');
+  image.src = imageSrc;
+  parent.appendChild(image);
+}
+
 
 function show1(){
   removeElement()
-  const block = document.getElementById("block1");
-  const photos = document.getElementById('photos');
+  let block = document.getElementById("block1");
+  let photos = document.getElementById('photos');
 
-  const image = document.createElement('img'); //putting this inside
-  image.src = "image/aam.jpg";
-  photos.appendChild(image);
-
-  const image2 = document.createElement('img'); 
-  image2.src = "image/aldi.jpg";
-  photos.appendChild(image2);
-
-  const image3 = document.createElement('img');
-  image3.src = "image/alfi.jpg";
-  photos.appendChild(image3);
+  appendImage(photos, "image/aam.jpg");
+  appendImage(photos, "image/alfi.jpg");
+  appendImage(photos, "image/nanda.jpg");
 
   block.setAttribute("onclick", "removeElement()");
 }
