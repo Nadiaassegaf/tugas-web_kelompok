@@ -5,6 +5,7 @@ const lib = document.getElementById("fotos");
 
 
 function show1(){
+  removeElement()
   const block = document.getElementById("block1");
   const photos = document.getElementById('photos');
 
@@ -12,12 +13,32 @@ function show1(){
   image.src = "image/aam.jpg";
   photos.appendChild(image);
 
-  const image2 = document.createElement('img'); //putting this inside
+  const image2 = document.createElement('img'); 
   image2.src = "image/aldi.jpg";
   photos.appendChild(image2);
 
-  const image3 = document.createElement('img'); //putting this inside
+  const image3 = document.createElement('img');
   image3.src = "image/alfi.jpg";
+  photos.appendChild(image3);
+
+  block.setAttribute("onclick", "removeElement()");
+}
+
+function show2(){
+  removeElement()
+  const block = document.getElementById("block2");
+  const photos = document.getElementById('photos');
+
+  const image = document.createElement('img'); //putting this inside
+  image.src = "image/aam.jpg";
+  photos.appendChild(image);
+
+  const image2 = document.createElement('img'); 
+  image2.src = "image/aldi.jpg";
+  photos.appendChild(image2);
+
+  const image3 = document.createElement('img');
+  image3.src = "image/nanda.jpg";
   photos.appendChild(image3);
 
   block.setAttribute("onclick", "removeElement()");
@@ -26,6 +47,7 @@ function show1(){
 
 function removeElement(){
   const block = document.getElementById("block1");
+  const block2 = document.getElementById("block2");
   const photos = document.getElementById("photos");
   if (photos){
     const image = photos.getElementsByTagName("img");
@@ -38,7 +60,11 @@ function removeElement(){
   }
 
   block.setAttribute("onclick", "show1()");
+  block2.setAttribute("onclick", "show2()");
 }
+
+
+
 
 function slideFunction() {
     for (let i = 0; i < slide.length; i++){
