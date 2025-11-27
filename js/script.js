@@ -16,7 +16,9 @@ function show1(){
   let photos = document.getElementById('photos');
 
   for (let i = 1; i <= 13; i++){
-    appendImage(photos, `image/disnatalis/D${i}.JPG`);
+    if (i !== 6){
+      appendImage(photos, `image/disnatalis/D${i}.JPG`);
+    }
   }
 
   block.setAttribute("onclick", "removeElement()");
@@ -39,6 +41,30 @@ function show2(){
   block.setAttribute("onclick", "removeElement()");
 }
 
+function show3(){
+  removeElement()
+  const block = document.getElementById("block3");
+  const photos = document.getElementById('photos');
+
+  for (let i = 1; i <= 43; i++){
+    if (i !== 31){
+      appendImage(photos, `image/villa/${i}.jpg`);
+    
+    }
+      block.setAttribute("onclick", "removeElement()");
+  }
+}
+
+function show4(){
+  removeElement()
+  const block = document.getElementById("block4");
+  const photos = document.getElementById('photos');
+
+  for (let i = 1; i <= 10; i++){
+      appendImage(photos, `image/kelas/${i}.jpg`);
+      block.setAttribute("onclick", "removeElement()");
+  }
+}
 
 
 
@@ -46,6 +72,8 @@ function show2(){
 function removeElement(){
   const block = document.getElementById("block1");
   const block2 = document.getElementById("block2");
+  const block3 = document.getElementById("block3");
+  const block4 = document.getElementById("block4");
   const photos = document.getElementById("photos");
   if (photos){
     const image = photos.getElementsByTagName("img");
@@ -56,9 +84,10 @@ function removeElement(){
       }
     }
   }
-
   block.setAttribute("onclick", "show1()");
   block2.setAttribute("onclick", "show2()");
+  block3.setAttribute("onclick", "show3()");
+  block4.setAttribute("onclick", "show4()");
 }
 
 //////////////ABORTED PROJECT///////////////////////
