@@ -515,6 +515,25 @@ body {
     }
 }
 
+.scrollUp {
+    background-image: url("https://cdn-icons-png.flaticon.com/512/4196/4196777.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 100px;
+    bottom: 0;
+    right: 0;
+    opacity: 20%;
+}
+
+.scrollUp:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
 /* =========================================
    8. FOOTER (GLOBAL)
    ========================================= */

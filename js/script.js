@@ -1,6 +1,7 @@
+
 // const slide = document.getElementsByClassName('main1');
-const sub = document.getElementsByClassName('sub');
-const lib = document.getElementById("fotos");
+// const sub = document.getElementsByClassName('sub');
+// const lib = document.getElementById("fotos");
 
 
 function appendImage(parent, imageSrc){
@@ -94,9 +95,34 @@ function removeElement(){
 
 
 function autoScroll(){
-  window.scrollBy(0, 700)
+  window.scrollTo(0, 1476);
 }
 
+function scrollUp(){
+  window.scrollTo(0, 0);
+}
+
+window.addEventListener('scroll', () => {
+const xPosition = window.scrollY;
+const yPosition = window.scrollX;
+console.log(`scroll position : y=${yPosition}, x=${xPosition}`);
+
+if (xPosition >= 1000) {
+  addClass();
+} else {
+  removeClass();
+}
+})
+
+function removeClass () {
+  const MyElement = document.getElementById("up1");
+  MyElement.removeAttribute("class");
+}
+
+function addClass(){
+  const MyElement = document.getElementById("up1");
+  MyElement.setAttribute('class', "scrollUp");
+}
 
 //////////////ABORTED PROJECT///////////////////////
 //////////////ABORTED PROJECT///////////////////////
