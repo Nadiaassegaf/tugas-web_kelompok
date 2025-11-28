@@ -1,4 +1,4 @@
-const slide = document.getElementsByClassName('main1');
+// const slide = document.getElementsByClassName('main1');
 const sub = document.getElementsByClassName('sub');
 const lib = document.getElementById("fotos");
 
@@ -20,7 +20,7 @@ function show1(){
       appendImage(photos, `image/disnatalis/D${i}.JPG`);
     }
   }
-
+  autoScroll();
   block.setAttribute("onclick", "removeElement()");
 }
 
@@ -37,7 +37,7 @@ function show2(){
     }
     appendImage(photos, `image/inagurasi/${i}${fileName}`);
   }
-
+  autoScroll();
   block.setAttribute("onclick", "removeElement()");
 }
 
@@ -51,8 +51,9 @@ function show3(){
       appendImage(photos, `image/villa/${i}.jpg`);
     
     }
-      block.setAttribute("onclick", "removeElement()");
   }
+  autoScroll();
+  block.setAttribute("onclick", "removeElement()");
 }
 
 function show4(){
@@ -62,8 +63,9 @@ function show4(){
 
   for (let i = 1; i <= 10; i++){
       appendImage(photos, `image/kelas/${i}.jpg`);
-      block.setAttribute("onclick", "removeElement()");
   }
+  autoScroll();
+  block.setAttribute("onclick", "removeElement()")
 }
 
 
@@ -89,6 +91,12 @@ function removeElement(){
   block3.setAttribute("onclick", "show3()");
   block4.setAttribute("onclick", "show4()");
 }
+
+
+function autoScroll(){
+  window.scrollBy(0, 700)
+}
+
 
 //////////////ABORTED PROJECT///////////////////////
 //////////////ABORTED PROJECT///////////////////////
